@@ -1,11 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
 
-
-import { AppComponent } from './app.component';
-import { LayoutComponent } from './components/layout/layout.component';
-import { MoviesComponent } from './components/movies/movies.component';
+import {AppComponent} from './app.component';
+import {LayoutComponent} from './components/layout/layout.component';
+import {MoviesComponent} from './components/movies/movies.component';
 import {SharedModule} from './shared/shared.module';
 
 const appRoutes: Routes = [
@@ -27,21 +26,23 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LayoutComponent,
-    MoviesComponent,
+    declarations: [
+        AppComponent,
+        LayoutComponent,
+        MoviesComponent,
 
 
-  ],
-  imports: [
-    BrowserModule,
-      RouterModule.forRoot(
-          appRoutes
-      ),
-      SharedModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    ],
+    imports: [
+        BrowserModule,
+        RouterModule.forRoot(
+            appRoutes
+        ),
+        SharedModule
+
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
