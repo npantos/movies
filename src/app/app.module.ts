@@ -19,7 +19,7 @@ const appRoutes: Routes = [
         component: MoviesComponent,
         children: [
             {
-                path: ':id',
+                path: ':term',
                 component: MoviesComponent
             }
         ]
