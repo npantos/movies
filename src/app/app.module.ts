@@ -7,6 +7,7 @@ import {LayoutComponent} from './components/layout/layout.component';
 import {MoviesComponent} from './components/movies/movies.component';
 import {SharedModule} from './shared/shared.module';
 import {SearchModule} from './search/search.module';
+import {SearchPageComponent} from './search/components/search-page/search-page.component';
 
 const appRoutes: Routes = [
     {
@@ -16,13 +17,11 @@ const appRoutes: Routes = [
     },
     {
         path: 'movies',
-        component: MoviesComponent,
-        children: [
-            {
-                path: ':term',
-                component: MoviesComponent
-            }
-        ]
+        component: MoviesComponent
+    },
+    {
+        path: 'search/:term',
+        component: SearchPageComponent
     },
 ];
 
