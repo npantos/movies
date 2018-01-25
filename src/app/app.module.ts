@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {LayoutComponent} from './components/layout/layout.component';
 import {MoviesComponent} from './components/movies/movies.component';
 import {SharedModule} from './shared/shared.module';
+import {SearchModule} from './search/search.module';
 
 const appRoutes: Routes = [
     {
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
         RouterModule.forRoot(
             appRoutes
         ),
-        SharedModule
+        SharedModule,
+        SearchModule
 
     ],
     providers: [],
