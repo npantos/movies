@@ -20,7 +20,7 @@ const appRoutes: Routes = [
         component: MoviesComponent
     },
     {
-        path: 'search/:term',
+        path: 'search/:keyword',
         component: SearchPageComponent
     },
 ];
